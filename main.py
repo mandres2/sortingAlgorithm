@@ -3,7 +3,7 @@ from tkinter import ttk
 import random
 from colors import *
 
-# Importing algorithms 
+# Importing algorithms
 from algorithms.bubbleSort import bubble_sort
 from algorithms.selectionSort import selection_sort
 from algorithms.insertionSort import insertion_sort
@@ -13,7 +13,7 @@ from algorithms.heapSort import heap_sort
 from algorithms.countingSort import counting_sort
 
 
-# Main window 
+# Main window
 window = Tk()
 window.title("Sorting Algorithms Visualization")
 window.maxsize(1000, 700)
@@ -71,7 +71,7 @@ def set_speed():
 def sort():
     global data
     timeTick = set_speed()
-    
+
     if algo_menu.get() == 'Bubble Sort':
         bubble_sort(data, drawData, timeTick)
     elif algo_menu.get() == 'Selection Sort':
@@ -112,6 +112,5 @@ b1.grid(row=2, column=1, padx=5, pady=5)
 
 b3 = Button(UI_frame, text="Generate Array", command=generate, bg=LIGHT_GRAY)
 b3.grid(row=2, column=0, padx=5, pady=5)
-
 
 window.mainloop()
