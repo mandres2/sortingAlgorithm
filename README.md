@@ -79,6 +79,13 @@ The process of reshaping a binary tree into a Heap data structure is known as �
 
 Starting from a complete binary tree, we can modify it to become a Max-Heap by running a function called ‘heapify’ on all the non-leaf elements of the heap. i.e. ‘heapify’ uses recursion.
 
+### Counting Sort:
+
+Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
+
+Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
+Auxiliary Space: O(n+k)
+
 <!-- <table>
   <tr>
     <td><img  src="img/ss1.png"></td>
@@ -87,16 +94,6 @@ Starting from a complete binary tree, we can modify it to become a Max-Heap by r
   </tr>
 </table> -->
 <p align='center'><img src="img/ss1.png"></p>
-
-## Implemented Algorithms:
-
-* Bubble Sort
-* Insertion Sort
-* Selection Sort
-* Merge Sort
-* Quick Sort
-* Heap Sort
-* Counting Sort
 
 ## Built With:
 * Python 3.10.4
